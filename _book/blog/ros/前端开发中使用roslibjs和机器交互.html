@@ -1,0 +1,665 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>前端开发中使用roslibjs和机器交互 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="roslibjs 前端 smileyqp">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ros概念的快速概述.html" />
+    
+    
+    <link rel="prev" href="我第一个ros demo.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" >
+            
+                <span>
+            
+                    
+                    Electron
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1.1" data-path="../electron/完整electron+react项目框架搭建.html">
+            
+                <a href="../electron/完整electron+react项目框架搭建.html">
+            
+                    
+                    完整electron+react项目框架搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.2" data-path="../electron/electron进程（一）.html">
+            
+                <a href="../electron/electron进程（一）.html">
+            
+                    
+                    electron进程（一）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.3" data-path="../electron/electron进程之间的通信（二）.html">
+            
+                <a href="../electron/electron进程之间的通信（二）.html">
+            
+                    
+                    electron进程之间的通信（二）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.4" data-path="../electron/使用remote进行跨进城访问（三）.html">
+            
+                <a href="../electron/使用remote进行跨进城访问（三）.html">
+            
+                    
+                    使用remote进行跨进城访问（三）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.1.5" data-path="../electron/关于asar打包.html">
+            
+                <a href="../electron/关于asar打包.html">
+            
+                    
+                    关于asar打包
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" >
+            
+                <span>
+            
+                    
+                    React
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.1" data-path="../react/React&Redux+node.js+postgreSQL完整项目实现登录认证系统.html">
+            
+                <a href="../react/React&Redux+node.js+postgreSQL完整项目实现登录认证系统.html">
+            
+                    
+                    React&Redux+node.js+postgreSQL完整项目实现登录认证系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" >
+            
+                <span>
+            
+                    
+                    React-Native
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.3.1" data-path="../react-native/react-navigation；导航解决方案.html">
+            
+                <a href="../react-native/react-navigation；导航解决方案.html">
+            
+                    
+                    react-navigation；导航解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2" data-path="../react-native/react-native中地图组件的选择react-native-amap3d.html">
+            
+                <a href="../react-native/react-native中地图组件的选择react-native-amap3d.html">
+            
+                    
+                    rn中地图组件的选择(react-native-amap3d)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.3" data-path="../react-native/react native实现监控手势进行上下拉动效果.html">
+            
+                <a href="../react-native/react native实现监控手势进行上下拉动效果.html">
+            
+                    
+                    rn实现监控手势进行上下拉动效果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.4" data-path="../react-native/react-native回调函数刷新页面.html">
+            
+                <a href="../react-native/react-native回调函数刷新页面.html">
+            
+                    
+                    react native回调函数刷新页面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.5" data-path="../react-native/android9.0以上版本http请求不了怎么办.html">
+            
+                <a href="../react-native/android9.0以上版本http请求不了怎么办.html">
+            
+                    
+                    android9.0以上版本http请求不了怎么办
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.6" data-path="../react-native/网络调试工具reactotron.html">
+            
+                <a href="../react-native/网络调试工具reactotron.html">
+            
+                    
+                    网络调试工具reactotron
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" >
+            
+                <span>
+            
+                    
+                    Roslibjs
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.4.1" data-path="我第一个ros demo.html">
+            
+                <a href="我第一个ros demo.html">
+            
+                    
+                    我第一个rosd_emo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.4.2" data-path="前端开发中使用roslibjs和机器交互.html">
+            
+                <a href="前端开发中使用roslibjs和机器交互.html">
+            
+                    
+                    前端开发中使用roslibjs和机器交互
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.3" data-path="ros概念的快速概述.html">
+            
+                <a href="ros概念的快速概述.html">
+            
+                    
+                    ros概念的快速概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4.4" data-path="关于js和ros进行交互roslibjs.html">
+            
+                <a href="关于js和ros进行交互roslibjs.html">
+            
+                    
+                    关于js和ros进行交互roslibjs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" >
+            
+                <span>
+            
+                    
+                    PHP
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.5.1" data-path="../phpfile/PHP基础回顾（一）.html">
+            
+                <a href="../phpfile/PHP基础回顾（一）.html">
+            
+                    
+                    PHP基础回顾(一)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5.2" data-path="../phpfile/PHP基础回顾之表单（二）.html">
+            
+                <a href="../phpfile/PHP基础回顾之表单（二）.html">
+            
+                    
+                    PHP基础回顾之表单（二）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5.3" data-path="../phpfile/PHP基础回顾之cookie和session（三）.html">
+            
+                <a href="../phpfile/PHP基础回顾之cookie和session（三）.html">
+            
+                    
+                    PHP基础回顾之cookie和session（三）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5.4" data-path="../phpfile/PHP基础回顾之E-mail（四）.html">
+            
+                <a href="../phpfile/PHP基础回顾之E-mail（四）.html">
+            
+                    
+                    PHP基础回顾之E-mail（四）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5.5" data-path="../phpfile/PHP基础回顾之PHP过滤器（五）.html">
+            
+                <a href="../phpfile/PHP基础回顾之PHP过滤器（五）.html">
+            
+                    
+                    PHP基础回顾之PHP过滤器(五)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5.6" data-path="../phpfile/PHP基础回顾之PHP_JSON（六）.html">
+            
+                <a href="../phpfile/PHP基础回顾之PHP_JSON（六）.html">
+            
+                    
+                    PHP基础回顾之PHP_JSON（六）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5.7" data-path="../phpfile/PHP基础回顾之My_SQL（七）.html">
+            
+                <a href="../phpfile/PHP基础回顾之My_SQL（七）.html">
+            
+                    
+                    PHP基础回顾之My_SQL（七）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5.8" data-path="../phpfile/PHP基础回顾之Ajax（八）.html">
+            
+                <a href="../phpfile/PHP基础回顾之Ajax（八）.html">
+            
+                    
+                    PHP基础回顾之Ajax（八）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >前端开发中使用roslibjs和机器交互</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x524D;&#x7AEF;&#x5F00;&#x53D1;&#x4E2D;&#x4F7F;&#x7528;roslibjs&#x548C;&#x673A;&#x5668;&#x4EA4;&#x4E92;">&#x524D;&#x7AEF;&#x5F00;&#x53D1;&#x4E2D;&#x4F7F;&#x7528;roslibjs&#x548C;&#x673A;&#x5668;&#x4EA4;&#x4E92;</h1>
+<blockquote>
+<p>&#x7531;&#x4E8E;&#x5F00;&#x53D1;&#x4E2D;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5230;roslibjs&#xFF0C;&#x7528;&#x4E8E;&#x524D;&#x7AEF;&#x754C;&#x9762;&#x76F4;&#x63A5;&#x548C;ros&#x7A0B;&#x5E8F;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#x7528;&#x4E8E;&#x8FBE;&#x5230;&#x7528;&#x524D;&#x6BB5;&#x754C;&#x9762;&#x5BF9;&#x673A;&#x5668;&#x7684;&#x63A7;&#x5236;&#x7684;&#x76EE;&#x7684;&#xFF0C;&#x4E8E;&#x662F;&#x4F5C;&#x4E3A;&#x4E00;&#x540D;&#x524D;&#x7AEF;&#x5F00;&#x53D1;&#x5C0F;&#x670B;&#x53CB;&#x53C8;&#x5F00;&#x59CB;&#x770B;&#x4E00;&#x4E0B;&#x57FA;&#x672C;&#x7684;ros&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x6765;&#x89E3;&#x51B3;&#x5B9E;&#x9645;&#x9700;&#x6C42;&#xFF1A;</p>
+<h4 id="ros&#x5B89;&#x88C5;&#x57FA;&#x7840;&#xFF08;ubuntu&#x4E0B;&#x9762;&#xFF09;">ros&#x5B89;&#x88C5;&#x57FA;&#x7840;&#xFF08;ubuntu&#x4E0B;&#x9762;&#xFF09;</h4>
+<p>&#x5B98;&#x65B9;&#x7F51;&#x5740;&#xFF1A;<a href="http://wiki.ros.org/ROS/Installation" target="_blank">http://wiki.ros.org/ROS/Installation</a>
+ubuntu&#x4E2D;&#x5B89;&#x88C5;<code>kinetic</code>&#x7248;&#x672C;
+&#x63A5;&#x4E0B;&#x6765;&#x6309;&#x7167;&#x5B98;&#x7F51;&#x6B65;&#x9AA4;&#x5373;&#x53EF; <a href="http://wiki.ros.org/kinetic/Installation/Ubuntu![](https://img-blog.csdnimg.cn/2019081611260747.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0MjczMDU5,size_16,color_FFFFFF,t_70" target="_blank">http://wiki.ros.org/kinetic/Installation/Ubuntu![](https://img-blog.csdnimg.cn/2019081611260747.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0MjczMDU5,size_16,color_FFFFFF,t_70</a>)
+<img src="https://img-blog.csdnimg.cn/20190816112815715.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0MjczMDU5,size_16,color_FFFFFF,t_70" alt=""></p>
+<h4 id="&#x521B;&#x5EFA;ros-&#x7684;-workspace">&#x521B;&#x5EFA;ros &#x7684; workspace</h4>
+<p>```shell
+$ mkdir -p ~/catkin_ws/src
+$ cd ~/catkin_ws/
+$ catkin_make</p>
+</blockquote>
+<p>$ source devel/setup.bash</p>
+<h1 id="&#x67E5;&#x770B;-rospackagepath-&#x73AF;&#x5883;&#x662F;&#x5426;&#x662F;&#x6B63;&#x786E;&#x7684;">&#x67E5;&#x770B; ROS_PACKAGE_PATH &#x73AF;&#x5883;&#x662F;&#x5426;&#x662F;&#x6B63;&#x786E;&#x7684;</h1>
+<p>$ echo $ROS_PACKAGE_PATH
+/home/youruser/catkin_ws/src:/opt/ros/kinetic/share
+```</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="我第一个ros demo.html" class="navigation navigation-prev " aria-label="Previous page: 我第一个rosd_emo">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ros概念的快速概述.html" class="navigation navigation-next " aria-label="Next page: ros概念的快速概述">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"前端开发中使用roslibjs和机器交互","level":"1.1.4.2","depth":3,"next":{"title":"ros概念的快速概述","level":"1.1.4.3","depth":3,"path":"blog/ros/ros概念的快速概述.md","ref":"blog/ros/ros概念的快速概述.md","articles":[]},"previous":{"title":"我第一个rosd_emo","level":"1.1.4.1","depth":3,"path":"blog/ros/我第一个ros demo.md","ref":"blog/ros/我第一个ros demo.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"blog/ros/前端开发中使用roslibjs和机器交互.md","mtime":"2020-03-31T02:24:25.691Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-31T02:39:42.037Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
